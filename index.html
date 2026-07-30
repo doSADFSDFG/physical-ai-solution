@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhysiCore AI | Industrial Physical AI Solutions</title>
-    <!-- Tailwind CSS CDN (디자인 라이브러리) -->
+    <!-- [수정 필요] 페이지 타이틀 -->
+    <title>[프로젝트명] | [한 줄 키워드 소제목]</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Chart.js CDN (지연시간 비교 그래프용) -->
+    <!-- Chart.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         /* Dark Theme & Custom Glow Effects */
@@ -23,9 +24,10 @@
     <nav class="fixed top-0 w-full z-50 glass-panel border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
             <div class="flex items-center space-x-3">
+                <!-- [수정 필요] 로고 이니셜 -->
                 <div class="w-8 h-8 bg-gradient-to-tr from-sky-500 to-indigo-500 rounded-lg flex items-center justify-center font-bold text-white shadow-lg shadow-sky-500/30">P</div>
-                <!-- [수정 가이드] 회사명을 변경하세요 -->
-                <span class="font-bold text-xl tracking-wider text-white">PhysiCore <span class="gradient-text">AI</span></span>
+                <!-- [수정 필요] 회사명 / 프로젝트명 -->
+                <span class="font-bold text-xl tracking-wider text-white">[프로젝트명] <span class="gradient-text">AI</span></span>
             </div>
             <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
                 <a href="#hero" class="hover:text-sky-400 transition-colors">Home</a>
@@ -34,7 +36,8 @@
                 <a href="#architecture" class="hover:text-sky-400 transition-colors">시스템 아키텍처</a>
                 <a href="#demo" class="hover:text-sky-400 transition-colors">Live Demo</a>
             </div>
-            <a href="#demo" class="bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold px-4 py-2 rounded-lg text-sm transition-all shadow-md shadow-sky-500/20">기술 백서 보기</a>
+            <!-- [수정 필요] 우측 상단 버튼 링크 -->
+            <a href="#demo" class="bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold px-4 py-2 rounded-lg text-sm transition-all shadow-md shadow-sky-500/20">기술 문서 보기</a>
         </div>
     </nav>
 
@@ -44,35 +47,39 @@
     <section id="hero" class="pt-32 pb-20 px-6 max-w-7xl mx-auto min-h-screen flex flex-col justify-center">
         <div class="inline-flex items-center space-x-2 bg-slate-800/80 border border-slate-700 px-3 py-1.5 rounded-full w-fit mb-6">
             <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
-            <!-- [수정 가이드] 한 줄 요약 메세지 -->
-            <span class="text-xs font-semibold text-slate-300">Edge AI & Closed-Loop Control System</span>
+            <!-- [수정 필요] 핵심 기술태그 / 한 줄 카피 -->
+            <span class="text-xs font-semibold text-slate-300">[핵심 기술 키워드 입력 (예: Edge AI & Control System)]</span>
         </div>
         
-        <!-- [수정 가이드] 메인 타이틀 및 서비스 설명 -->
+        <!-- [수정 필요] 메인 헤드라인 -->
         <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">
-            제철소 용접 연기 속에서도<br>
-            <span class="gradient-text">22ms 지연시간으로 제어하는 피지컬 AI</span>
+            [현장 문제상황 정의]<br>
+            <span class="gradient-text">[해결책 및 수치화된 핵심 성과]</span>
         </h1>
+        <!-- [수정 필요] 서브 설명문 -->
         <p class="text-slate-400 text-lg md:text-xl max-w-3xl mb-10 leading-relaxed">
-            통제된 연구실을 넘어, 불규칙한 센서 노이즈와 분진이 가득한 실제 산업 현장에서 강력하게 동작하는 온디바이스(On-device) 비전 AI & 로봇 통합 제어 솔루션입니다.
+            [프로젝트의 핵심 개요를 작성하세요. 어떤 문제 해결을 위해 어떤 온디바이스 AI/로보틱스/소프트웨어 기술을 통합 적용했는지 설명합니다.]
         </p>
 
-        <!-- ROI 강조 카드 3선 -->
+        <!-- ROI 및 지표 카드 3선 -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="glass-panel p-6 rounded-2xl border-l-4 border-l-sky-500">
-                <div class="text-slate-400 text-sm mb-1">Target Latency Budget</div>
-                <div class="text-3xl font-bold text-white font-mono">22 ms <span class="text-xs text-emerald-400 font-normal">(PASS)</span></div>
-                <p class="text-xs text-slate-500 mt-2">30 FPS 기준 한 프레임 예산(33ms) 완벽 준수</p>
+                <div class="text-slate-400 text-sm mb-1">Target Latency / Performance</div>
+                <!-- [수정 필요] 핵심 성능 지표 -->
+                <div class="text-3xl font-bold text-white font-mono">[00 ms / 00 FPS] <span class="text-xs text-emerald-400 font-normal">(PASS)</span></div>
+                <p class="text-xs text-slate-500 mt-2">[목표 지표 달성 여부 및 상세 부연 설명]</p>
             </div>
             <div class="glass-panel p-6 rounded-2xl border-l-4 border-l-indigo-500">
-                <div class="text-slate-400 text-sm mb-1">ROI / Expected Benefit</div>
-                <div class="text-3xl font-bold text-white font-mono">연간 4.2억 <span class="text-xs text-indigo-400 font-normal">절감</span></div>
-                <p class="text-xs text-slate-500 mt-2">설비 가동 중단(Downtime) 및 불량률 감소</p>
+                <div class="text-slate-400 text-sm mb-1">Expected ROI / Benefit</div>
+                <!-- [수정 필요] 정량적 비즈니스 효과 -->
+                <div class="text-3xl font-bold text-white font-mono">[비용/시간 절감 수치] <span class="text-xs text-indigo-400 font-normal">절감</span></div>
+                <p class="text-xs text-slate-500 mt-2">[불량률 감소, 공정 단축, 인건비 절감 등 효과]</p>
             </div>
             <div class="glass-panel p-6 rounded-2xl border-l-4 border-l-emerald-500">
-                <div class="text-slate-400 text-sm mb-1">Target Hardware</div>
-                <div class="text-3xl font-bold text-white">Jetson Orin</div>
-                <p class="text-xs text-slate-500 mt-2">NPU/ONNX 최적화 엣지 컴퓨팅 탑재</p>
+                <div class="text-slate-400 text-sm mb-1">Target Hardware / Stack</div>
+                <!-- [수정 필요] 타겟 하드웨어 -->
+                <div class="text-3xl font-bold text-white">[사용 타겟 디바이스]</div>
+                <p class="text-xs text-slate-500 mt-2">[사용 보드/NPU/최적화 프레임워크 명시]</p>
             </div>
         </div>
     </section>
@@ -83,38 +90,38 @@
     <section id="prd" class="py-20 px-6 max-w-7xl mx-auto border-t border-slate-800">
         <div class="mb-12">
             <h2 class="text-3xl font-bold mb-3">1. Problem Definition & One-Page PRD</h2>
-            <p class="text-slate-400">아이디어를 넘어 양산(Production) 가치를 증명하는 한 장 기획서 프레임워크입니다.</p>
+            <p class="text-slate-400">아이디어를 넘어 실제 산업 가치를 증명하는 한 장 기획서(PRD)입니다.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- [수정 가이드] PRD 6칸 항목 내용을 변경하세요 -->
+            <!-- [수정 필요] PRD 6가지 항목 작성 -->
             <div class="glass-panel p-6 rounded-xl">
                 <div class="text-sky-400 font-semibold text-sm mb-2">01. 문제 정의 (Problem)</div>
-                <p class="text-slate-300 text-sm leading-relaxed">용접 공정 중 발생하는 자욱한 유증기와 불꽃 스펙큘러로 인해 기존 비전 카메라의 가짜 객체 오검출율이 14%에 달함.</p>
+                <p class="text-slate-300 text-sm leading-relaxed">[현장에서 발생하고 있는 비효율, 노이즈, 안전 문제 또는 기존 방식의 한계점 작성]</p>
             </div>
             <div class="glass-panel p-6 rounded-xl">
                 <div class="text-sky-400 font-semibold text-sm mb-2">02. 사용자 시나리오</div>
-                <p class="text-slate-300 text-sm leading-relaxed">현장 안전관리자가 엣지 대시보드를 통해 불꽃 오검출 경보를 즉시 확인하고, 4축 로봇에 비상 정지(STOP) 제어 신호 전달.</p>
+                <p class="text-slate-300 text-sm leading-relaxed">[사용자/작업자가 이 솔루션을 통해 문제를 인지하고 제어하는 워크플로우 단계 작성]</p>
             </div>
             <div class="glass-panel p-6 rounded-xl">
                 <div class="text-sky-400 font-semibold text-sm mb-2">03. 성공 지표 (KPI)</div>
                 <ul class="text-slate-300 text-sm space-y-1">
-                    <li>• 추론 지연시간: <strong class="text-emerald-400">&lt; 25ms</strong></li>
-                    <li>• 모델 mAP@50: <strong class="text-emerald-400">&gt; 91.5%</strong></li>
-                    <li>• 연속 가동률: <strong class="text-emerald-400">99.9%</strong></li>
+                    <li>• 지연시간: <strong class="text-emerald-400">&lt; [목표ms]</strong></li>
+                    <li>• 모델 정확도: <strong class="text-emerald-400">&gt; [목표mAP/Acc]</strong></li>
+                    <li>• 가동률/시스템 안정성: <strong class="text-emerald-400">[목표%]</strong></li>
                 </ul>
             </div>
             <div class="glass-panel p-6 rounded-xl">
                 <div class="text-indigo-400 font-semibold text-sm mb-2">04. 핵심 기술 스택</div>
-                <p class="text-slate-300 text-sm">YOLO26 + ONNX Runtime, OpenCV (CLAHE), ESP32-S3 (MQTT), Docker, FastAPI</p>
+                <p class="text-slate-300 text-sm">[AI 모델, 전처리 라이브러리, 통신 프로토콜, 백엔드/프론트엔드 스택 기재]</p>
             </div>
             <div class="glass-panel p-6 rounded-xl">
                 <div class="text-indigo-400 font-semibold text-sm mb-2">05. Scope / Thin-Slice</div>
-                <p class="text-slate-300 text-sm leading-relaxed"><strong>In-Scope:</strong> 1개 라인 안전모/작업자 정밀 검출.<br><strong>Out-of-Scope:</strong> 전사 클라우드 ERP 연동.</p>
+                <p class="text-slate-300 text-sm leading-relaxed"><strong>In-Scope:</strong> [이번 프로젝트에서 핵심 구현할 범주]<br><strong>Out-of-Scope:</strong> [제외할 연동 범위/추후 확장 영역]</p>
             </div>
             <div class="glass-panel p-6 rounded-xl">
                 <div class="text-indigo-400 font-semibold text-sm mb-2">06. ROI 한 줄 증명</div>
-                <p class="text-slate-300 text-sm leading-relaxed">PoC 구축 비용 2,000만 원 대비 오동작 방지로 연간 4억 2천만 원 손실 예방 (회수기간: 0.6개월)</p>
+                <p class="text-slate-300 text-sm leading-relaxed">[구축/운영 비용 대비 기대 효과 및 투자금 회수 예상 기간 작성]</p>
             </div>
         </div>
     </section>
@@ -125,7 +132,7 @@
     <section id="environment" class="py-20 px-6 max-w-7xl mx-auto border-t border-slate-800">
         <div class="mb-12">
             <h2 class="text-3xl font-bold mb-3">2. Field Environment Analysis (5-Env)</h2>
-            <p class="text-slate-400">현장의 물리적 악조건을 사전 분석하여 전처리 및 방어 로직을 구축했습니다.</p>
+            <p class="text-slate-400">현장의 물리적 악조건을 사전 분석하고 대응책을 마련했습니다.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -136,30 +143,30 @@
                     <thead class="bg-slate-800/80 text-slate-400 text-xs uppercase">
                         <tr>
                             <th class="p-3">환경 요소</th>
-                            <th class="p-3">현장 상태</th>
-                            <th class="p-3">적용 전처리/보정</th>
+                            <th class="p-3">현장 상태/노이즈</th>
+                            <th class="p-3">적용 전처리/보정 로직</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-slate-800">
                         <tr>
                             <td class="p-3 font-semibold text-white">1. 광학 (Optical)</td>
-                            <td class="p-3">용접 불꽃 반사광</td>
-                            <td class="p-3 text-sky-400">CLAHE (적응형 평등화)</td>
+                            <td class="p-3">[조명, 반사광, 음영 등]</td>
+                            <td class="p-3 text-sky-400">[보정 기술명/필터]</td>
                         </tr>
                         <tr>
                             <td class="p-3 font-semibold text-white">2. 오염 (Noise)</td>
-                            <td class="p-3">분진 및 유증기 시야 방해</td>
-                            <td class="p-3 text-sky-400">Morphology Open/Close</td>
+                            <td class="p-3">[분진, 연기, 노이즈 등]</td>
+                            <td class="p-3 text-sky-400">[필터링/노이즈 제거 기법]</td>
                         </tr>
                         <tr>
                             <td class="p-3 font-semibold text-white">3. 기계 (Motion)</td>
-                            <td class="p-3">로봇 팔 12Hz 진동</td>
-                            <td class="p-3 text-sky-400">Sharpening + Dynamic ROI</td>
+                            <td class="p-3">[진동, 흔들림, 블러 등]</td>
+                            <td class="p-3 text-sky-400">[샤프닝/동적 ROI 등]</td>
                         </tr>
                         <tr>
                             <td class="p-3 font-semibold text-white">4. 센서 (Sensor)</td>
-                            <td class="p-3">1080p 60FPS Raw Data</td>
-                            <td class="p-3 text-sky-400">640x640 Downsampling</td>
+                            <td class="p-3">[해상도, 프레임 레이트 등]</td>
+                            <td class="p-3 text-sky-400">[리사이징/다운샘플링]</td>
                         </tr>
                     </tbody>
                 </table>
@@ -169,23 +176,22 @@
             <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between">
                 <div>
                     <h3 class="text-lg font-bold text-sky-400 mb-2">Production-ready 전처리 파이프라인</h3>
-                    <p class="text-xs text-slate-400 mb-4">Fail-fast 검증, 예외 처리, 지연시간 측정이 포함된 파이썬 모듈 코드입니다.</p>
+                    <p class="text-xs text-slate-400 mb-4">Fail-fast 검증, 예외 처리, 지연시간 측정이 포함된 파이썬 코드 예시입니다.</p>
                     <pre class="bg-slate-950 p-4 rounded-xl text-xs font-mono text-slate-300 overflow-x-auto border border-slate-800"><code><span class="text-indigo-400">class</span> <span class="text-emerald-400">PreprocessPipeline</span>:
     <span class="text-indigo-400">def</span> <span class="text-sky-400">run</span>(self, frame):
         <span class="text-slate-500"># 1. Fail-Fast 데이터 검증</span>
         <span class="text-indigo-400">if</span> frame <span class="text-indigo-400">is</span> <span class="text-sky-400">None</span>: <span class="text-indigo-400">raise</span> ValueError(<span class="text-emerald-300">"Corrupted Frame"</span>)
         
-        <span class="text-slate-500"># 2. 광학 노이즈 제거 (CLAHE)</span>
-        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        enhanced = self.clahe.apply(gray)
+        <span class="text-slate-500"># 2. 노이즈 제거 및 전처리 모듈</span>
+        processed = self.apply_filter(frame)
         
-        <span class="text-slate-500"># 3. 엣지 디바이스 용 Resize (Memory reuse)</span>
-        resized = cv2.resize(enhanced, (640, 640))
+        <span class="text-slate-500"># 3. 모델 입력을 위한 리사이즈</span>
+        resized = cv2.resize(processed, (640, 640))
         <span class="text-indigo-400">return</span> resized</code></pre>
                 </div>
                 <div class="mt-4 flex items-center justify-between text-xs text-slate-400 border-t border-slate-800 pt-3">
-                    <span>Logging &amp; Exception Handling</span>
-                    <span class="text-emerald-400 font-mono">STATUS: OK</span>
+                    <span>Logging & Exception Handling</span>
+                    <span class="text-emerald-400 font-mono">STATUS: READY</span>
                 </div>
             </div>
         </div>
@@ -196,27 +202,28 @@
     <!-- ========================================== -->
     <section id="architecture" class="py-20 px-6 max-w-7xl mx-auto border-t border-slate-800">
         <div class="mb-12">
-            <h2 class="text-3xl font-bold mb-3">3. System Architecture &amp; Benchmark</h2>
-            <p class="text-slate-400">수치로 증명하는 Edge vs Cloud Latency 비교 분석입니다.</p>
+            <h2 class="text-3xl font-bold mb-3">3. System Architecture & Benchmark</h2>
+            <p class="text-slate-400">수치로 증명하는 시스템 구성 및 Performance 비교 분석입니다.</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            <!-- Diagram-as-Code 설명 -->
+            <!-- 파이프라인 설명 -->
             <div class="lg:col-span-5 space-y-4">
                 <div class="glass-panel p-6 rounded-2xl">
-                    <h3 class="text-lg font-bold text-white mb-2">Diagram-as-Code (d2)</h3>
+                    <h3 class="text-lg font-bold text-white mb-2">시스템 데이터 흐름 (Data Flow)</h3>
                     <p class="text-sm text-slate-300 leading-relaxed">
-                        센서 노드(ESP32-S3)에서 MQTT 통신을 거쳐, 온디바이스 라즈베리파이/Jetson에서 ONNX 경량화 추론을 수행하고 로봇 모터(Servo)를 직접 제어하는 Closed-Loop 구조입니다.
+                        [센서/카메라 데이터 수집부터 통신 프로토콜, AI 추론, 최종 제어 장치로 이어지는 시스템 흐름을 설명하세요.]
                     </p>
+                    <!-- [수정 필요] 파이프라인 텍스트 요약 -->
                     <div class="mt-4 inline-block text-xs font-mono bg-slate-800 text-sky-400 px-3 py-1.5 rounded-md">
-                        Sensor ➔ MQTT ➔ ONNX Edge ➔ Robot Control
+                        [센서 입력] ➔ [통신] ➔ [AI 추론/처리] ➔ [제어 출력]
                     </div>
                 </div>
             </div>
 
             <!-- Chart.js 그래프 영역 -->
             <div class="lg:col-span-7 glass-panel p-6 rounded-2xl">
-                <h3 class="text-md font-bold text-slate-300 mb-4">지연시간 분석 (30 FPS 예산 기준: 33ms)</h3>
+                <h3 class="text-md font-bold text-slate-300 mb-4">성능/지연시간 비교 그래프</h3>
                 <div class="relative h-64 w-full">
                     <canvas id="latencyChart"></canvas>
                 </div>
@@ -229,8 +236,8 @@
     <!-- ========================================== -->
     <section id="demo" class="py-20 px-6 max-w-7xl mx-auto border-t border-slate-800">
         <div class="mb-12 text-center">
-            <h2 class="text-3xl font-bold mb-3">4. Live Demo &amp; Code Repository</h2>
-            <p class="text-slate-400">실제 작동하는 자율 구동 로봇 시연 및 개방된 기술 문서입니다.</p>
+            <h2 class="text-3xl font-bold mb-3">4. Live Demo & Code Repository</h2>
+            <p class="text-slate-400">실제 작동 시연 자료 및 코드 소스입니다.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -239,32 +246,32 @@
                 <div class="w-16 h-16 bg-sky-500/10 text-sky-400 rounded-full flex items-center justify-center mb-4">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </div>
-                <h3 class="font-bold text-lg mb-1">로봇 자율 구동 시연 (Demo GIF)</h3>
-                <p class="text-xs text-slate-400 max-w-sm mb-4">[수정 가이드] 여기에 실제 로봇 구동 영상이나 GIF 이미지를 삽입하세요.</p>
-                <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-full">Closed-Loop Test Passed</span>
+                <h3 class="font-bold text-lg mb-1">시스템 작동 시연 (Demo Video / GIF)</h3>
+                <p class="text-xs text-slate-400 max-w-sm mb-4">[이곳에 실제 작동 GIF 이미지 <img> 태그 또는 비디오 링크를 추가하세요]</p>
+                <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-full">Test Status: Passed</span>
             </div>
 
             <!-- API / GitHub 링크 카드 -->
             <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between">
                 <div>
-                    <h3 class="font-bold text-lg text-white mb-2">FastAPI &amp; CI/CD Pipeline</h3>
+                    <h3 class="font-bold text-lg text-white mb-2">API & Infrastructure</h3>
                     <p class="text-sm text-slate-300 mb-6">
-                        Docker 기반 컨테이너화 및 GitHub Actions 자동 테스트 파이프라인이 구축되어 있습니다.
+                        [배포 환경, Docker 컨테이너화 상태, API 서버 구성 및 테스트 상태를 설명하세요.]
                     </p>
                     <div class="space-y-3">
                         <div class="flex items-center justify-between p-3 bg-slate-900 rounded-lg text-xs">
-                            <span class="font-mono text-slate-400">FastAPI Swagger UI</span>
+                            <span class="font-mono text-slate-400">API Documentation</span>
                             <span class="text-sky-400 font-semibold">/docs (Ready)</span>
                         </div>
                         <div class="flex items-center justify-between p-3 bg-slate-900 rounded-lg text-xs">
-                            <span class="font-mono text-slate-400">CI/CD Gate Status</span>
+                            <span class="font-mono text-slate-400">Build & CI Status</span>
                             <span class="text-emerald-400 font-semibold">PASSing</span>
                         </div>
                     </div>
                 </div>
                 
-                <!-- [수정 가이드] 학생들의 본인 GitHub 레포지토리 주소로 연결 -->
-                <a href="https://github.com" target="_blank" class="mt-6 w-full py-3 bg-slate-800 hover:bg-slate-700 text-center text-sm font-semibold rounded-xl border border-slate-700 transition-all flex items-center justify-center space-x-2">
+                <!-- [수정 필요] 본인의 GitHub 레포지토리 주소 링크 -->
+                <a href="https://github.com/your-username/your-repo" target="_blank" class="mt-6 w-full py-3 bg-slate-800 hover:bg-slate-700 text-center text-sm font-semibold rounded-xl border border-slate-700 transition-all flex items-center justify-center space-x-2">
                     <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                     <span>GitHub Code Repository</span>
                 </a>
@@ -274,7 +281,8 @@
 
     <!-- Footer -->
     <footer class="py-8 text-center text-xs text-slate-500 border-t border-slate-900">
-        <p>© 2026 PhysiCore AI Solution Inc. All rights reserved.</p>
+        <!-- [수정 필요] 저작권 / 팀명 -->
+        <p>© 2026 [프로젝트명 / 팀명]. All rights reserved.</p>
     </footer>
 
     <!-- ========================================== -->
@@ -285,13 +293,15 @@
         new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ['Cloud Architecture', 'On-Device Edge (Ours)'],
+                // [수정 필요] 비교 대상 라벨 (예: 기존 방식 vs 제안 방식)
+                labels: ['Baseline / Existing', 'Our Solution'],
                 datasets: [{
-                    label: 'Latency (ms)',
-                    data: [102, 22], // [수정 가이드] 측정 수치를 변경하세요 (Cloud vs Edge)
+                    label: 'Performance Metric (e.g. Latency ms)',
+                    // [수정 필요] 그래프 수치 입력 (예: 기존 100ms vs 우리 20ms)
+                    data: [100, 20], 
                     backgroundColor: [
-                        'rgba(239, 68, 68, 0.6)',  // Red for Cloud (FAIL)
-                        'rgba(16, 185, 129, 0.8)'  // Green for Edge (PASS)
+                        'rgba(239, 68, 68, 0.6)',  // Red (비교군)
+                        'rgba(16, 185, 129, 0.8)'  // Green (우리 솔루션)
                     ],
                     borderColor: [
                         'rgba(239, 68, 68, 1)',
